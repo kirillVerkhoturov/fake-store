@@ -1,0 +1,6 @@
+framework module Pods_Fake_Store_Fake_StoreUITests {
+  umbrella header "Pods-Fake Store-Fake StoreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
