@@ -139,11 +139,16 @@
 		E8621D97277005A2004C3080 /* Fake Store */ = {
 			isa = PBXGroup;
 			children = (
+				E8621DCA2770084C004C3080 /* Core */,
+				E8621DC92770083C004C3080 /* Views */,
+				E8621DCD27700885004C3080 /* Styles */,
+				E8621DCB2770085A004C3080 /* UIComponents */,
+				E8621DCC27700873004C3080 /* Helpers */,
+				E8621DC827700818004C3080 /* Recources */,
 				E8621D98277005A2004C3080 /* AppDelegate.swift */,
 				E8621D9A277005A2004C3080 /* SceneDelegate.swift */,
 				E8621D9C277005A2004C3080 /* ViewController.swift */,
 				E8621D9E277005A2004C3080 /* Main.storyboard */,
-				E8621DA1277005A6004C3080 /* Assets.xcassets */,
 				E8621DA3277005A6004C3080 /* LaunchScreen.storyboard */,
 				E8621DA6277005A6004C3080 /* Info.plist */,
 			);
@@ -165,6 +170,49 @@
 				E8621DBB277005A6004C3080 /* Fake_StoreUITestsLaunchTests.swift */,
 			);
 			path = "Fake StoreUITests";
+			sourceTree = "<group>";
+		};
+		E8621DC827700818004C3080 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				E8621DA1277005A6004C3080 /* Assets.xcassets */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		E8621DC92770083C004C3080 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8621DCA2770084C004C3080 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8621DCB2770085A004C3080 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E8621DCC27700873004C3080 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8621DCD27700885004C3080 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
