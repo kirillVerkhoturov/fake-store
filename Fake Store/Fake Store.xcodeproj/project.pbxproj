@@ -22,6 +22,7 @@
 		4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EC92775CC7F00025DB5 /* CartViewModel.swift */; };
 		4FF90ECD2775CC9B00025DB5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */; };
 		4FF90ED02775D5E700025DB5 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */; };
+		4FF90ED22776072700025DB5 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90ED12776072700025DB5 /* ViewModelFactory.swift */; };
 		CAE3BD7B62752E3BE0467791 /* Pods_Fake_StoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E22EAC630BA9980F29C5501 /* Pods_Fake_StoreTests.framework */; };
 		E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8621D98277005A2004C3080 /* AppDelegate.swift */; };
 		E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8621D9A277005A2004C3080 /* SceneDelegate.swift */; };
@@ -69,6 +70,7 @@
 		4FF90EC92775CC7F00025DB5 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		4FF90ED12776072700025DB5 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		5826DD1E33F71E33D05046BE /* Pods_Fake_Store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fake_Store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602CF8E9BE82DE0D73CB66A8 /* Pods-Fake Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fake Store.release.xcconfig"; path = "Target Support Files/Pods-Fake Store/Pods-Fake Store.release.xcconfig"; sourceTree = "<group>"; };
 		7A0368D9BD1C35A146A19CB6 /* Pods-Fake StoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fake StoreTests.release.xcconfig"; path = "Target Support Files/Pods-Fake StoreTests/Pods-Fake StoreTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */,
+				4FF90ED12776072700025DB5 /* ViewModelFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8621D9D277005A2004C3080 /* ViewController.swift in Sources */,
+				4FF90ED22776072700025DB5 /* ViewModelFactory.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
 				4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */,
 				4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */,

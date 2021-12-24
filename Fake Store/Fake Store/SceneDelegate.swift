@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func runUI() {
-        let moduleFactory = ModuleFactory()
+        let viewModelFactory = ViewModelFactory()
+        let moduleFactory = ModuleFactory(viewModelFactory: viewModelFactory)
         window?.rootViewController = StoreTabBarController(moduleFactory: moduleFactory)
         window?.makeKeyAndVisible()
     }

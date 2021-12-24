@@ -16,20 +16,27 @@ protocol ModuleFactoryProtocol: AnyObject {
 }
 
 final class ModuleFactory: ModuleFactoryProtocol {
+
+    private let viewModelFactory: ViewModelFactoryProtocol
+
+    init(viewModelFactory: ViewModelFactoryProtocol) {
+        self.viewModelFactory = viewModelFactory
+    }
+    
     func makeHomeModule() -> HomeViewController {
-        HomeViewController(/*viewModel: HomeViewModel()*/)
+        HomeViewController(/*viewModel: viewModelFactory.makeHomeViewModel()*/)
     }
 
     func makeWishlistModule() -> WishlistViewController {
-        WishlistViewController(/*viewModel: WishlistViewModel()*/)
+        WishlistViewController(/*viewModel: viewModelFactory.makeWishlistViewModel()*/)
     }
 
     func makeCartModule() -> CartViewController {
-        CartViewController(/*viewModel: CartViewModel()*/)
+        CartViewController(/*viewModel: viewModelFactory.makeCartViewModel()*/)
     }
 
     func makeProfileModule() -> ProfileViewController {
-        ProfileViewController(/*viewModel: ProfileViewModel()*/)
+        ProfileViewController(/*viewModel: viewModelFactory.makeProfileViewModel()*/)
     }
 
 }
