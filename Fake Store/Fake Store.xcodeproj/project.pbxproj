@@ -11,6 +11,17 @@
 		41CB756DBD47703D195A1A51 /* Pods_Fake_Store_Fake_StoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A918A35C09163FDF3708BA1 /* Pods_Fake_Store_Fake_StoreUITests.framework */; };
 		4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6CBD3C2774898300C6A5A3 /* AppColor.swift */; };
 		4FA20A542774988A003E3703 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA20A532774988A003E3703 /* AppImages.swift */; };
+		4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */; };
+		4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */; };
+		4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB92774D56200025DB5 /* CartViewController.swift */; };
+		4FF90EBC2774D57D00025DB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EBB2774D57D00025DB5 /* HomeViewController.swift */; };
+		4FF90EBE2774D58700025DB5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EBD2774D58700025DB5 /* ProfileViewController.swift */; };
+		4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EC02774D6AC00025DB5 /* StoreNavigationController.swift */; };
+		4FF90EC42775CC2A00025DB5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EC32775CC2A00025DB5 /* HomeViewModel.swift */; };
+		4FF90EC62775CC5E00025DB5 /* WishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EC52775CC5E00025DB5 /* WishlistViewModel.swift */; };
+		4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EC92775CC7F00025DB5 /* CartViewModel.swift */; };
+		4FF90ECD2775CC9B00025DB5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */; };
+		4FF90ED02775D5E700025DB5 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */; };
 		CAE3BD7B62752E3BE0467791 /* Pods_Fake_StoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E22EAC630BA9980F29C5501 /* Pods_Fake_StoreTests.framework */; };
 		E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8621D98277005A2004C3080 /* AppDelegate.swift */; };
 		E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8621D9A277005A2004C3080 /* SceneDelegate.swift */; };
@@ -47,6 +58,17 @@
 		3E22EAC630BA9980F29C5501 /* Pods_Fake_StoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fake_StoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6CBD3C2774898300C6A5A3 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		4FA20A532774988A003E3703 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabBarController.swift; sourceTree = "<group>"; };
+		4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		4FF90EB92774D56200025DB5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		4FF90EBB2774D57D00025DB5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4FF90EBD2774D58700025DB5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4FF90EC02774D6AC00025DB5 /* StoreNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNavigationController.swift; sourceTree = "<group>"; };
+		4FF90EC32775CC2A00025DB5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4FF90EC52775CC5E00025DB5 /* WishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModel.swift; sourceTree = "<group>"; };
+		4FF90EC92775CC7F00025DB5 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		5826DD1E33F71E33D05046BE /* Pods_Fake_Store.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fake_Store.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602CF8E9BE82DE0D73CB66A8 /* Pods-Fake Store.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fake Store.release.xcconfig"; path = "Target Support Files/Pods-Fake Store/Pods-Fake Store.release.xcconfig"; sourceTree = "<group>"; };
 		7A0368D9BD1C35A146A19CB6 /* Pods-Fake StoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fake StoreTests.release.xcconfig"; path = "Target Support Files/Pods-Fake StoreTests/Pods-Fake StoreTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +131,130 @@
 				E8621DCC27700873004C3080 /* Helpers */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4FF90EA82774CCBC00025DB5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EAF2774D50800025DB5 /* VIew */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4FF90EAB2774D2BB00025DB5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB02774D51600025DB5 /* View */,
+				4FF90EC22775CBF300025DB5 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4FF90EAC2774D2C700025DB5 /* Wishlist */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB12774D51D00025DB5 /* View */,
+				4FF90EC82775CC7100025DB5 /* ViewModel */,
+			);
+			path = Wishlist;
+			sourceTree = "<group>";
+		};
+		4FF90EAD2774D2D500025DB5 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB22774D52400025DB5 /* View */,
+				4FF90ECB2775CC8C00025DB5 /* ViewModel */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		4FF90EAE2774D2DB00025DB5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB32774D52C00025DB5 /* View */,
+				4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4FF90EAF2774D50800025DB5 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		4FF90EB02774D51600025DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EBB2774D57D00025DB5 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF90EB12774D51D00025DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF90EB22774D52400025DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EB92774D56200025DB5 /* CartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF90EB32774D52C00025DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EBD2774D58700025DB5 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF90EBF2774D69000025DB5 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EC02774D6AC00025DB5 /* StoreNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		4FF90EC22775CBF300025DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EC32775CC2A00025DB5 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FF90EC82775CC7100025DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EC52775CC5E00025DB5 /* WishlistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FF90ECB2775CC8C00025DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90EC92775CC7F00025DB5 /* CartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FF90ECE2775D5BB00025DB5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90ECF2775D5E700025DB5 /* ModuleFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		DCFB4B49FA1FF7229AC9B6E3 /* Pods */ = {
@@ -192,6 +338,11 @@
 		E8621DC92770083C004C3080 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FF90EAB2774D2BB00025DB5 /* Home */,
+				4FF90EAC2774D2C700025DB5 /* Wishlist */,
+				4FF90EAD2774D2D500025DB5 /* Cart */,
+				4FF90EAE2774D2DB00025DB5 /* Profile */,
+				4FF90EA82774CCBC00025DB5 /* TabBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +350,7 @@
 		E8621DCA2770084C004C3080 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4FF90ECE2775D5BB00025DB5 /* Factory */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -206,6 +358,7 @@
 		E8621DCB2770085A004C3080 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4FF90EBF2774D69000025DB5 /* NavigationController */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -466,9 +619,20 @@
 			files = (
 				E8621D9D277005A2004C3080 /* ViewController.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
+				4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */,
+				4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */,
+				4FF90EBE2774D58700025DB5 /* ProfileViewController.swift in Sources */,
 				E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */,
 				4FA20A542774988A003E3703 /* AppImages.swift in Sources */,
+				4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */,
+				4FF90EC42775CC2A00025DB5 /* HomeViewModel.swift in Sources */,
+				4FF90ECD2775CC9B00025DB5 /* ProfileViewModel.swift in Sources */,
+				4FF90EC62775CC5E00025DB5 /* WishlistViewModel.swift in Sources */,
+				4FF90EBC2774D57D00025DB5 /* HomeViewController.swift in Sources */,
+				4FF90ED02775D5E700025DB5 /* ModuleFactory.swift in Sources */,
 				E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */,
+				4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */,
+				4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
