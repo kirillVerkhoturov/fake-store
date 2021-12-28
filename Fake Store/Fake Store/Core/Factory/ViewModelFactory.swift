@@ -8,7 +8,6 @@
 import Foundation
 
 protocol ViewModelFactoryProtocol {
-
     func makeHomeViewModel() -> HomeViewModel
     func makeWishlistViewModel() -> WishlistViewModel
     func makeCartViewModel() -> CartViewModel
@@ -16,9 +15,15 @@ protocol ViewModelFactoryProtocol {
 }
 
 final class ViewModelFactory: ViewModelFactoryProtocol {
+
+    // MARK: - Private Properties
+
+    private lazy var container = DIContainer()
+
+    // MARK: - Public Methods
     
     func makeHomeViewModel() -> HomeViewModel {
-        HomeViewModel()
+        HomeViewModel(service: container.homeService)
     }
 
     func makeWishlistViewModel() -> WishlistViewModel {
