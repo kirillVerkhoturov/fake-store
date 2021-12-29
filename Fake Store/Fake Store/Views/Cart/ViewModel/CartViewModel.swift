@@ -9,5 +9,15 @@ import Foundation
 
 final class CartViewModel {
 
+    // MARK: - Private Properties
+
+    private let cartService: CartServiceProtocol?
+
+    // MARK: - Initializers
+
+    init(service: CartServiceProtocol) {
+        self.cartService = service
+    }
+
 }
 

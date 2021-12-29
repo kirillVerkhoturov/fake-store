@@ -18,6 +18,9 @@ final class DIContainer {
     let apiClient: APIClient
 
     lazy var homeService = HomeService(homeAPIClient: apiClient)
+    lazy var wishlistService = WishlistService(wishlistAPIClient: apiClient)
+    lazy var cartService = CartService(cartAPIClient: apiClient)
+    lazy var profileService = ProfileService(profileAPIClient: apiClient)
 
     // MARK: - Initializers
 

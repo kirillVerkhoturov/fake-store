@@ -33,15 +33,15 @@ final class ModuleFactory: ModuleFactoryProtocol {
     }
 
     func makeWishlistModule() -> WishlistViewController {
-        WishlistViewController(/*viewModel: viewModelFactory.makeWishlistViewModel()*/)
+        WishlistViewController(viewModel: viewModelFactory.makeWishlistViewModel())
     }
 
     func makeCartModule() -> CartViewController {
-        CartViewController(/*viewModel: viewModelFactory.makeCartViewModel()*/)
+        CartViewController(viewModel: viewModelFactory.makeCartViewModel())
     }
 
     func makeProfileModule() -> ProfileViewController {
-        ProfileViewController(/*viewModel: viewModelFactory.makeProfileViewModel()*/)
+        ProfileViewController(viewModel: viewModelFactory.makeProfileViewModel())
     }
 
 }

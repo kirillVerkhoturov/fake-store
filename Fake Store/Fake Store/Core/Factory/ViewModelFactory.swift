@@ -27,15 +27,15 @@ final class ViewModelFactory: ViewModelFactoryProtocol {
     }
 
     func makeWishlistViewModel() -> WishlistViewModel {
-        WishlistViewModel()
+        WishlistViewModel(service: container.wishlistService)
     }
 
     func makeCartViewModel() -> CartViewModel {
-        CartViewModel()
+        CartViewModel(service: container.cartService)
     }
 
     func makeProfileViewModel() -> ProfileViewModel {
-        ProfileViewModel()
+        ProfileViewModel(service: container.profileService)
     }
 
 }

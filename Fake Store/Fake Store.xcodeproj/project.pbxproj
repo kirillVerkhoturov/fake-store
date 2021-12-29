@@ -17,6 +17,12 @@
 		4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6CBD3C2774898300C6A5A3 /* AppColor.swift */; };
 		4FA20A542774988A003E3703 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA20A532774988A003E3703 /* AppImages.swift */; };
 		4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D33277B155F00AA0810 /* DIContainer.swift */; };
+		4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D38277C514C00AA0810 /* WishlistService.swift */; };
+		4FB56D3B277C517900AA0810 /* WishlistAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D3A277C517900AA0810 /* WishlistAPIClient.swift */; };
+		4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D3C277C54AD00AA0810 /* ProfileService.swift */; };
+		4FB56D3F277C54DF00AA0810 /* ProfileAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */; };
+		4FB56D41277C550B00AA0810 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D40277C550B00AA0810 /* CartService.swift */; };
+		4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D42277C552E00AA0810 /* CartAPIClient.swift */; };
 		4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */; };
 		4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */; };
 		4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB92774D56200025DB5 /* CartViewController.swift */; };
@@ -70,6 +76,12 @@
 		4F6CBD3C2774898300C6A5A3 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		4FA20A532774988A003E3703 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		4FB56D33277B155F00AA0810 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		4FB56D38277C514C00AA0810 /* WishlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistService.swift; sourceTree = "<group>"; };
+		4FB56D3A277C517900AA0810 /* WishlistAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistAPIClient.swift; sourceTree = "<group>"; };
+		4FB56D3C277C54AD00AA0810 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIClient.swift; sourceTree = "<group>"; };
+		4FB56D40277C550B00AA0810 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		4FB56D42277C552E00AA0810 /* CartAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAPIClient.swift; sourceTree = "<group>"; };
 		4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabBarController.swift; sourceTree = "<group>"; };
 		4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		4FF90EB92774D56200025DB5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +205,9 @@
 			children = (
 				4F2A7893277A15D8004FC159 /* APIClient.swift */,
 				4F2A7895277A2011004FC159 /* HomeAPIClient.swift */,
+				4FB56D3A277C517900AA0810 /* WishlistAPIClient.swift */,
+				4FB56D42277C552E00AA0810 /* CartAPIClient.swift */,
+				4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -201,6 +216,9 @@
 			isa = PBXGroup;
 			children = (
 				4F2A7897277A2220004FC159 /* HomeService.swift */,
+				4FB56D38277C514C00AA0810 /* WishlistService.swift */,
+				4FB56D40277C550B00AA0810 /* CartService.swift */,
+				4FB56D3C277C54AD00AA0810 /* ProfileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -211,6 +229,14 @@
 				E8621DCC27700873004C3080 /* Helpers */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4FB56D44277C59C300AA0810 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4FF90EA82774CCBC00025DB5 /* TabBar */ = {
@@ -252,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF90EB32774D52C00025DB5 /* View */,
-				4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */,
+				4FB56D44277C59C300AA0810 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -700,22 +726,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF90ED22776072700025DB5 /* ViewModelFactory.swift in Sources */,
+				4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
+				4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */,
+				4FB56D41277C550B00AA0810 /* CartService.swift in Sources */,
 				4F2A7896277A2011004FC159 /* HomeAPIClient.swift in Sources */,
 				4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */,
 				4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */,
 				4FF90EBE2774D58700025DB5 /* ProfileViewController.swift in Sources */,
 				E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */,
 				4FA20A542774988A003E3703 /* AppImages.swift in Sources */,
+				4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */,
 				4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */,
 				4F2A7898277A2220004FC159 /* HomeService.swift in Sources */,
 				4FF90EC42775CC2A00025DB5 /* HomeViewModel.swift in Sources */,
 				4FF90ECD2775CC9B00025DB5 /* ProfileViewModel.swift in Sources */,
 				4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */,
+				4FB56D3F277C54DF00AA0810 /* ProfileAPIClient.swift in Sources */,
 				4FF90EC62775CC5E00025DB5 /* WishlistViewModel.swift in Sources */,
 				4FF90EBC2774D57D00025DB5 /* HomeViewController.swift in Sources */,
 				4FF90ED02775D5E700025DB5 /* ModuleFactory.swift in Sources */,
 				E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */,
+				4FB56D3B277C517900AA0810 /* WishlistAPIClient.swift in Sources */,
 				4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */,
 				4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */,
 				4F2A78922779F68C004FC159 /* RequestBuilder.swift in Sources */,
