@@ -8,5 +8,15 @@
 import Foundation
 
 final class WishlistViewModel {
+
+    // MARK: - Private Properties
+
+    private let wishlistService: WishlistServiceProtocol?
+
+    // MARK: - Initializers
+
+    init(service: WishlistServiceProtocol) {
+        self.wishlistService = service
+    }
     
 }
