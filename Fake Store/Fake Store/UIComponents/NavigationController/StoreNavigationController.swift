@@ -26,15 +26,13 @@ class StoreNavigationController: UINavigationController {
     // MARK: - Private methods
 
     private func setNavBar() {
-        // TODO: change arrows
-
         let navBarAppearence = UINavigationBarAppearance()
 
         navBarAppearence.configureWithOpaqueBackground()
         navBarAppearence.titleTextAttributes = [.foregroundColor: AppColor.primaryBlack, .font: UIFont.systemFont(ofSize: 16)]
 
         navBarAppearence.backgroundColor = AppColor.primaryWhite
-        //        navBarAppearence.setBackIndicatorImage(<#T##backIndicatorImage: UIImage?##UIImage?#>, transitionMaskImage: <#T##UIImage?#>)
+        navBarAppearence.setBackIndicatorImage(AppImages.Navigation.leftArrow, transitionMaskImage: AppImages.Navigation.leftArrow)
         navBarAppearence.shadowColor = AppColor.primaryWhite
 
         navigationBar.tintColor = AppColor.primaryBlack

@@ -12,6 +12,7 @@ protocol ViewModelFactoryProtocol {
     func makeWishlistViewModel() -> WishlistViewModel
     func makeCartViewModel() -> CartViewModel
     func makeProfileViewModel() -> ProfileViewModel
+    func makeLoginViewModel() -> LoginViewModel
 }
 
 final class ViewModelFactory: ViewModelFactoryProtocol {
@@ -36,6 +37,9 @@ final class ViewModelFactory: ViewModelFactoryProtocol {
 
     func makeProfileViewModel() -> ProfileViewModel {
         ProfileViewModel(service: container.profileService)
+    }
+    func makeLoginViewModel() -> LoginViewModel {
+        LoginViewModel()
     }
 
 }
