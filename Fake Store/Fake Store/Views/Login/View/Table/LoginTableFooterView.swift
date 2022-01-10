@@ -101,9 +101,9 @@ class LoginTableFooterView: UITableViewHeaderFooterView {
     // MARK: - Private Methods
 
     private func setupLayout() {
-        addSubview(socialStacView)
-        addSubview(createAccountLabel)
-        addSubview(separateContainerView)
+        contentView.addSubview(socialStacView)
+        contentView.addSubview(createAccountLabel)
+        contentView.addSubview(separateContainerView)
 
         separateContainerView.addSubview(separateLineView)
         separateContainerView.addSubview(separateLabel)

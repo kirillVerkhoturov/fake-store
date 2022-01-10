@@ -48,8 +48,8 @@ class LoginTableHeaderView: UITableViewHeaderFooterView {
     // MARK: - Private Methods
 
     private func setupLayout() {
-        addSubview(avatarImageView)
-        addSubview(loginLabel)
+        contentView.addSubview(avatarImageView)
+        contentView.addSubview(loginLabel)
 
         avatarImageView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(72)
@@ -58,7 +58,6 @@ class LoginTableHeaderView: UITableViewHeaderFooterView {
         loginLabel.snp.makeConstraints {
             $0.top.equalTo(avatarImageView.snp.bottom).offset(64)
             $0.centerX.equalToSuperview()
-            $0.height.equalTo(22)
             $0.bottom.equalToSuperview().offset(-11)
         }
     }
