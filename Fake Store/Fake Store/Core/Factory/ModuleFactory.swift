@@ -12,6 +12,7 @@ protocol ModuleFactoryProtocol: AnyObject {
     func makeWishlistModule() -> WishlistViewController
     func makeCartModule() -> CartViewController
     func makeProfileModule() -> ProfileViewController
+    func makeLoginModule() -> LoginViewController
 }
 
 final class ModuleFactory: ModuleFactoryProtocol {
@@ -42,6 +43,9 @@ final class ModuleFactory: ModuleFactoryProtocol {
 
     func makeProfileModule() -> ProfileViewController {
         ProfileViewController(viewModel: viewModelFactory.makeProfileViewModel())
+    }
+    func makeLoginModule() -> LoginViewController {
+        LoginViewController(viewModel: viewModelFactory.makeLoginViewModel())
     }
 
 }

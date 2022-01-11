@@ -12,6 +12,7 @@ class StoreTabBarController: UITabBarController {
     // MARK: - Private Properties
 
     private let moduleFactory: ModuleFactoryProtocol
+    private var isLogin: Bool = false
 
     // MARK: - Initializers
 
@@ -52,8 +53,22 @@ class StoreTabBarController: UITabBarController {
         let cartNavigationController = StoreNavigationController(rootViewController: cartViewController)
         cartNavigationController.tabBarItem = UITabBarItem(title: "Cart", image: AppImages.Tabs.cart, selectedImage: AppImages.Tabs.cartFilled)
 
+        let loginViewController = moduleFactory.makeLoginModule()
         let profilelistViewController = moduleFactory.makeProfileModule()
-        let profileNavigationController = StoreNavigationController(rootViewController: profilelistViewController)
+
+        // TODO: Uncomment when the token/id repository will be ready
+//        isLogin = loginViewController.loginViewModel.checkLoginStatus()
+
+        loginViewController.loginViewModel.isLogin = { [weak self] login in
+            self?.isLogin = login
+            self?.initializeTabBar()
+        }
+        var profileNavigationController = StoreNavigationController(rootViewController: loginViewController)
+
+        if isLogin {
+            profileNavigationController = StoreNavigationController(rootViewController: profilelistViewController)
+        }
+
         profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: AppImages.Tabs.profile, selectedImage: AppImages.Tabs.profileFilled)
 
         viewControllers =  [homeNavigationController,

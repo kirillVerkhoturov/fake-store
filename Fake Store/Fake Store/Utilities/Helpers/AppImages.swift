@@ -23,4 +23,17 @@ final class AppImages {
         static let profileFilled = UIImage(named: "account.Filled")
     }
 
+    enum Login {
+        static let profile = UIImage(named: "profile.Rounded.Stroke")
+        static let lock = UIImage(named: "lock.Stroke")
+
+        static let facebook = UIImage(named: "facebook.circle")
+        static let googlePlus = UIImage(named: "googlePlus.circle")
+        static let apple = UIImage(named: "apple.circle")
+    }
+
+    enum Navigation {
+        static let leftArrow = UIImage(named: "left.Arrow")
+    }
+
 }
