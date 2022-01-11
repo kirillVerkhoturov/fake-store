@@ -8,11 +8,7 @@
 import UIKit
 import SnapKit
 
-class LoginTableHeaderView: UITableViewHeaderFooterView {
-
-    // MARK: - Public Properties
-
-    static let reuseIdentifier = "LoginTableHeaderView"
+class LoginTableHeaderView: UIView {
 
     // MARK: - Private Properties
 
@@ -36,10 +32,15 @@ class LoginTableHeaderView: UITableViewHeaderFooterView {
 
     // MARK: - Initializers
 
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupLayout()
     }
+
+//    override init(reuseIdentifier: String?) {
+//        super.init(reuseIdentifier: reuseIdentifier)
+//        setupLayout()
+//    }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -48,8 +49,8 @@ class LoginTableHeaderView: UITableViewHeaderFooterView {
     // MARK: - Private Methods
 
     private func setupLayout() {
-        contentView.addSubview(avatarImageView)
-        contentView.addSubview(loginLabel)
+        addSubview(avatarImageView)
+        addSubview(loginLabel)
 
         avatarImageView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(72)

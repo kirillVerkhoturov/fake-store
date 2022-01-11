@@ -12,7 +12,8 @@ class LoginTextField: UITextField {
     // MARK: - Private Properties
 
     private let textPadding = UIEdgeInsets(top: 0, left: 64, bottom: 0, right: 5)
-//    private let imagePadding = UIEdgeInsets(top: 21, left: 25, bottom: 21, right: 320)
+
+    // MARK: - Initializers
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -61,8 +62,5 @@ class LoginTextField: UITextField {
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         bounds.inset(by: textPadding)
     }
-//    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
-//        bounds.inset(by: imagePadding)
-//    }
 
 }

@@ -24,6 +24,8 @@
 		4F74BD5B277DBE0B00F4BB35 /* LoginTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74BD5A277DBE0B00F4BB35 /* LoginTableHeaderView.swift */; };
 		4F74BD5D277DD21800F4BB35 /* LoginTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74BD5C277DD21800F4BB35 /* LoginTableView.swift */; };
 		4F74BD5F277DD48F00F4BB35 /* LoginTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74BD5E277DD48F00F4BB35 /* LoginTableFooterView.swift */; };
+		4F97881C278C59F300D89DD4 /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */; };
+		4F97881E278C5A1300D89DD4 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */; };
 		4FA20A542774988A003E3703 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA20A532774988A003E3703 /* AppImages.swift */; };
 		4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D33277B155F00AA0810 /* DIContainer.swift */; };
 		4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D38277C514C00AA0810 /* WishlistService.swift */; };
@@ -92,6 +94,8 @@
 		4F74BD5A277DBE0B00F4BB35 /* LoginTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableHeaderView.swift; sourceTree = "<group>"; };
 		4F74BD5C277DD21800F4BB35 /* LoginTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableView.swift; sourceTree = "<group>"; };
 		4F74BD5E277DD48F00F4BB35 /* LoginTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableFooterView.swift; sourceTree = "<group>"; };
+		4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		4FA20A532774988A003E3703 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		4FB56D33277B155F00AA0810 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		4FB56D38277C514C00AA0810 /* WishlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistService.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 		4F6CBD3B2774895100C6A5A3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4F97881A278C59DE00D89DD4 /* Extensions */,
 				E8621DCC27700873004C3080 /* Helpers */,
 			);
 			path = Utilities;
@@ -294,6 +299,15 @@
 				4F74BD50277CA40700F4BB35 /* LoginTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		4F97881A278C59DE00D89DD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */,
+				4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4FB56D44277C59C300AA0810 /* ViewModel */ = {
@@ -795,6 +809,7 @@
 				4FF90ED22776072700025DB5 /* ViewModelFactory.swift in Sources */,
 				4F74BD4D277C958800F4BB35 /* LoginView.swift in Sources */,
 				4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */,
+				4F97881C278C59F300D89DD4 /* UITableViewCell+Ext.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
 				4F74BD5D277DD21800F4BB35 /* LoginTableView.swift in Sources */,
 				4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */,
@@ -809,6 +824,7 @@
 				4F74BD5B277DBE0B00F4BB35 /* LoginTableHeaderView.swift in Sources */,
 				4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */,
 				4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */,
+				4F97881E278C5A1300D89DD4 /* UITableView+Ext.swift in Sources */,
 				4F74BD57277CD25D00F4BB35 /* LoginTableViewCell.swift in Sources */,
 				4F2A7898277A2220004FC159 /* HomeService.swift in Sources */,
 				4FF90EC42775CC2A00025DB5 /* HomeViewModel.swift in Sources */,

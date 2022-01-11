@@ -8,11 +8,7 @@
 import UIKit
 import SnapKit
 
-class LoginTableFooterView: UITableViewHeaderFooterView {
-
-    // MARK: - Public Properties
-
-    static let reuseIdentifier = "LoginTableFooterView"
+class LoginTableFooterView: UIView {
 
     // MARK: - Private Properties
 
@@ -76,7 +72,7 @@ class LoginTableFooterView: UITableViewHeaderFooterView {
         return label
     }()
 
-    private lazy var socialStacView: UIStackView = {
+    private lazy var socialStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [facebookImageView, googleImageView, appleImageView])
         stackView.axis = .horizontal
         stackView.alignment = .center
@@ -89,10 +85,16 @@ class LoginTableFooterView: UITableViewHeaderFooterView {
 
     // MARK: - Initializers
 
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupLayout()
+
     }
+
+//    override init(reuseIdentifier: String?) {
+//        super.init(reuseIdentifier: reuseIdentifier)
+//        setupLayout()
+//    }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -101,13 +103,13 @@ class LoginTableFooterView: UITableViewHeaderFooterView {
     // MARK: - Private Methods
 
     private func setupLayout() {
-        contentView.addSubview(socialStacView)
-        contentView.addSubview(createAccountLabel)
-        contentView.addSubview(separateContainerView)
+        addSubview(socialStackView)
+        addSubview(createAccountLabel)
+        addSubview(separateContainerView)
 
         separateContainerView.addSubview(separateLineView)
         separateContainerView.addSubview(separateLabel)
-        
+
         separateContainerView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(6)
             $0.leading.equalToSuperview().offset(24)
@@ -125,13 +127,13 @@ class LoginTableFooterView: UITableViewHeaderFooterView {
             $0.height.equalTo(1)
         }
 
-        socialStacView.snp.makeConstraints {
+        socialStackView.snp.makeConstraints {
             $0.top.equalTo(separateContainerView.snp.bottom).offset(24)
             $0.leading.equalToSuperview().offset(120)
             $0.trailing.equalToSuperview().offset(-120)
         }
         createAccountLabel.snp.makeConstraints {
-            $0.top.equalTo(socialStacView.snp.bottom).offset(60)
+            $0.top.equalTo(socialStackView.snp.bottom).offset(60)
             $0.centerX.equalToSuperview()
             $0.bottom.equalToSuperview().offset(-38)
         }

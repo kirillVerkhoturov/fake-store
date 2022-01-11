@@ -9,10 +9,6 @@ import UIKit
 import SnapKit
 
 class LoginTableViewCell: UITableViewCell {
-
-    // MARK: - Public Properties
-
-    static let reuseID = "LoginTableViewCell"
     
     // MARK: - Private Properties
 

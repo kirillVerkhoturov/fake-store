@@ -24,7 +24,7 @@ final class LoginViewModel {
 
     func loginButtonDidTap() {
         if !username.isEmpty && !password.isEmpty {
-            isLogin!(true)
+            isLogin?(true)
         }
     }
 

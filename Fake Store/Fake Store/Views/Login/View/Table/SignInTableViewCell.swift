@@ -10,11 +10,6 @@ import SnapKit
 
 class SignInTableViewCell: UITableViewCell {
 
-
-    // MARK: - Public Properties
-
-    static let reuseID = "SignInTableViewCell"
-
     // MARK: - Private Properties
 
     private lazy var forgotLabel: UILabel = {

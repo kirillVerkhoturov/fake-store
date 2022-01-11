@@ -38,11 +38,15 @@ class LoginTableView: UITableView {
         delegate = self
         dataSource = self
 
-        register(LoginTableViewCell.self, forCellReuseIdentifier: LoginTableViewCell.reuseID)
-        register(SignInTableViewCell.self, forCellReuseIdentifier: SignInTableViewCell.reuseID)
+        register(cellClass: LoginTableViewCell.self)
+        register(cellClass: SignInTableViewCell.self)
+        let header = LoginTableHeaderView()
+        header.translatesAutoresizingMaskIntoConstraints = false
+        tableHeaderView = header
+        let footer = LoginTableFooterView()
+        footer.translatesAutoresizingMaskIntoConstraints = false
+        tableFooterView = footer
 
-        tableHeaderView = LoginTableHeaderView()
-        tableFooterView = LoginTableFooterView()
     }
 
     @objc private func signInButtonDidTap() {
@@ -55,10 +59,6 @@ extension LoginTableView: UITableViewDelegate, UITableViewDataSource {
 
     // MARK: UITableViewDataSource
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
@@ -67,14 +67,15 @@ extension LoginTableView: UITableViewDelegate, UITableViewDataSource {
         let cellType = CellType(rawValue: indexPath.row)
         switch cellType {
         case .login:
-            let cell = dequeueReusableCell(withIdentifier: LoginTableViewCell.reuseID) as! LoginTableViewCell
+            let cell = dequeue(cellClass: LoginTableViewCell.self, forIndexPath: indexPath)
             onUsernameChange?(cell.usernameTextField.text!)
             onPasswordChange?(cell.passwordTextField.text!)
 
             return cell
         case .signIn:
-            let cell = dequeueReusableCell(withIdentifier: SignInTableViewCell.reuseID) as! SignInTableViewCell
+            let cell = dequeue(cellClass: SignInTableViewCell.self, forIndexPath: indexPath)
             cell.loginButton.addTarget(self, action: #selector(signInButtonDidTap), for: .touchUpInside)
+
             return cell
         case .none:
             return UITableViewCell()
@@ -86,21 +87,15 @@ extension LoginTableView: UITableViewDelegate, UITableViewDataSource {
 extension LoginTableView {
     func updateHeaderViewHeigh() {
         guard let headerView = self.tableHeaderView as? LoginTableHeaderView else { return }
-        let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
-        if headerView.frame.size.height != height {
-            headerView.frame.size.height = height
-            self.tableHeaderView = headerView
-        }
+        headerView.frame.size.height = updateHeaderFooterHeight(for: headerView)
         headerView.translatesAutoresizingMaskIntoConstraints = true
+        tableHeaderView = headerView
     }
 
     func updateFooterViewHeigh() {
         guard let footerView = self.tableFooterView as? LoginTableFooterView else { return }
-        let height = footerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
-        if footerView.frame.size.height != height {
-            footerView.frame.size.height = height
-            self.tableFooterView = footerView
-        }
+        footerView.frame.size.height = updateHeaderFooterHeight(for: footerView)
         footerView.translatesAutoresizingMaskIntoConstraints = true
+        tableFooterView = footerView
     }
 }
