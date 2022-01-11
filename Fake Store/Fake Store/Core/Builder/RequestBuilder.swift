@@ -9,6 +9,7 @@ import Foundation
 
 enum Endpoint {
     case none
+    case auth
     case product(id: Int? = nil)
     case getProducts
     case categories
@@ -18,9 +19,11 @@ enum Endpoint {
         switch self {
         case .none:
             return "/"
+        case .auth:
+            return "/auth/login"
         case .product(id: let id):
             guard let id = id else { return "/products/" }
-            return "products/\(id)"
+            return "/products/\(id)"
         case .getProducts:
             return "/products/"
         case .categories:
@@ -45,11 +48,12 @@ protocol RequestBuilderProtocol {
     var path: Endpoint { get }
     var method: HTTPMethod { get }
     var parameters: [String: Any] { get }
+    var headers: [String: String] { get }
 
     func set(host: String) -> Self
     func set(path: Endpoint) -> Self
     func set(method: HTTPMethod) -> Self
-    func set<T: Encodable>(parameter: T) -> Self
+    func set<T: Encodable>(parameters: T) -> Self
 
     func build() -> URLRequest?
 }
@@ -62,6 +66,8 @@ class RequestBuilder: RequestBuilderProtocol {
     private(set) var path: Endpoint = .none
     private(set) var method: HTTPMethod = .GET
     private(set) var parameters: [String : Any] = [:]
+    private(set) var headers: [String : String] = ["Accept": "application/json",
+                                                   "Content-Type": "application/json"]
 
     // MARK: - Public Methods
 
@@ -84,7 +90,16 @@ class RequestBuilder: RequestBuilderProtocol {
     }
 
     @discardableResult
-    func set<T>(parameter: T) -> Self {
+    func set<T: Encodable>(parameters: T) -> Self {
+        if let dictionary = parameters as? [String: Any] {
+            self.parameters = dictionary
+        } else {
+            guard let jsonData = try? JSONEncoder().encode(parameters) else { return self }
+            guard let jsonObject = try? JSONSerialization.jsonObject(with: jsonData) else { return self }
+            if let dictionary = jsonObject as? [String: Any] {
+                self.parameters = dictionary
+            }
+        }
         return self
     }
 
@@ -100,6 +115,14 @@ class RequestBuilder: RequestBuilderProtocol {
         guard let url = urlComponents.url else { return nil }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
+
+        if !parameters.isEmpty, !isGetMethod {
+            let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
+            urlRequest.httpBody = jsonData
+        }
+        headers.forEach { key, value in
+            urlRequest.addValue(value, forHTTPHeaderField: key)
+        }
 
         return urlRequest
     }
