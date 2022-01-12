@@ -39,7 +39,7 @@ final class ViewModelFactory: ViewModelFactoryProtocol {
         ProfileViewModel(service: container.profileService)
     }
     func makeLoginViewModel() -> LoginViewModel {
-        LoginViewModel()
+        LoginViewModel(service: container.authService)
     }
 
 }

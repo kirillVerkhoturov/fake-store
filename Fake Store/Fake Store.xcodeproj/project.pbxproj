@@ -26,6 +26,9 @@
 		4F74BD5F277DD48F00F4BB35 /* LoginTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74BD5E277DD48F00F4BB35 /* LoginTableFooterView.swift */; };
 		4F97881C278C59F300D89DD4 /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */; };
 		4F97881E278C5A1300D89DD4 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */; };
+		4F978822278D7EF000D89DD4 /* AuthAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978821278D7EEF00D89DD4 /* AuthAPIClient.swift */; };
+		4F978824278D807900D89DD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978823278D807900D89DD4 /* AuthService.swift */; };
+		4F978827278DC86E00D89DD4 /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978826278DC86E00D89DD4 /* SessionRepository.swift */; };
 		4FA20A542774988A003E3703 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA20A532774988A003E3703 /* AppImages.swift */; };
 		4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D33277B155F00AA0810 /* DIContainer.swift */; };
 		4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D38277C514C00AA0810 /* WishlistService.swift */; };
@@ -96,6 +99,9 @@
 		4F74BD5E277DD48F00F4BB35 /* LoginTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableFooterView.swift; sourceTree = "<group>"; };
 		4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
 		4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		4F978821278D7EEF00D89DD4 /* AuthAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIClient.swift; sourceTree = "<group>"; };
+		4F978823278D807900D89DD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4F978826278DC86E00D89DD4 /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
 		4FA20A532774988A003E3703 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		4FB56D33277B155F00AA0810 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		4FB56D38277C514C00AA0810 /* WishlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistService.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 		4F2A788C2779F612004FC159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F978825278DC86000D89DD4 /* Store */,
 				4F2A788D2779F620004FC159 /* Network */,
 			);
 			path = Model;
@@ -230,6 +237,7 @@
 				4FB56D3A277C517900AA0810 /* WishlistAPIClient.swift */,
 				4FB56D42277C552E00AA0810 /* CartAPIClient.swift */,
 				4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */,
+				4F978821278D7EEF00D89DD4 /* AuthAPIClient.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				4FB56D38277C514C00AA0810 /* WishlistService.swift */,
 				4FB56D40277C550B00AA0810 /* CartService.swift */,
 				4FB56D3C277C54AD00AA0810 /* ProfileService.swift */,
+				4F978823278D807900D89DD4 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,6 +317,14 @@
 				4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F978825278DC86000D89DD4 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4F978826278DC86E00D89DD4 /* SessionRepository.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		4FB56D44277C59C300AA0810 /* ViewModel */ = {
@@ -815,6 +832,7 @@
 				4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */,
 				4FB56D41277C550B00AA0810 /* CartService.swift in Sources */,
 				4F74BD51277CA40700F4BB35 /* LoginTextField.swift in Sources */,
+				4F978822278D7EF000D89DD4 /* AuthAPIClient.swift in Sources */,
 				4F2A7896277A2011004FC159 /* HomeAPIClient.swift in Sources */,
 				4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */,
 				4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */,
@@ -823,6 +841,7 @@
 				4FA20A542774988A003E3703 /* AppImages.swift in Sources */,
 				4F74BD5B277DBE0B00F4BB35 /* LoginTableHeaderView.swift in Sources */,
 				4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */,
+				4F978827278DC86E00D89DD4 /* SessionRepository.swift in Sources */,
 				4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */,
 				4F97881E278C5A1300D89DD4 /* UITableView+Ext.swift in Sources */,
 				4F74BD57277CD25D00F4BB35 /* LoginTableViewCell.swift in Sources */,
@@ -841,6 +860,7 @@
 				E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */,
 				4FB56D3B277C517900AA0810 /* WishlistAPIClient.swift in Sources */,
 				4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */,
+				4F978824278D807900D89DD4 /* AuthService.swift in Sources */,
 				4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */,
 				4F2A78922779F68C004FC159 /* RequestBuilder.swift in Sources */,
 				4F2A7894277A15D8004FC159 /* APIClient.swift in Sources */,
@@ -1016,6 +1036,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fake Store/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1044,6 +1065,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fake Store/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

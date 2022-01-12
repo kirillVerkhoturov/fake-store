@@ -37,11 +37,6 @@ class LoginTableHeaderView: UIView {
         setupLayout()
     }
 
-//    override init(reuseIdentifier: String?) {
-//        super.init(reuseIdentifier: reuseIdentifier)
-//        setupLayout()
-//    }
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -53,7 +48,7 @@ class LoginTableHeaderView: UIView {
         addSubview(loginLabel)
 
         avatarImageView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(72)
+            $0.top.equalToSuperview().offset(36)
             $0.centerX.equalToSuperview()
         }
         loginLabel.snp.makeConstraints {
