@@ -26,6 +26,10 @@ final class DIContainer {
     lazy var profileService = ProfileService(profileAPIClient: apiClient)
     lazy var authService  = AuthService(authAPIClient: apiClient, sessionRepository: sessionRepository)
 
+    // MARK: - Private Properties
+
+    private let maxResponseTime: TimeInterval = 30
+
     // MARK: - Initializers
 
     init() {
@@ -33,7 +37,7 @@ final class DIContainer {
         sessionRepository = SessionRepository(udWrapper: udWrapper)
         requestBuilder = RequestBuilder()
         configuration.waitsForConnectivity = true
-        configuration.timeoutIntervalForResource = 30
+        configuration.timeoutIntervalForResource = maxResponseTime
         session = URLSession(configuration: configuration)
         decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

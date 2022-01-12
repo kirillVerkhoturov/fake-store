@@ -10,10 +10,10 @@ import Foundation
 enum Endpoint {
     case none
     case auth
-    case product(id: Int? = nil)
+    case product(id: Int)
     case getProducts
     case categories
-    case productsInCategory(category: String? = nil)
+    case productsInCategory(category: String)
 
     var rawValue: String {
         switch self {
@@ -21,15 +21,13 @@ enum Endpoint {
             return "/"
         case .auth:
             return "/auth/login"
-        case .product(id: let id):
-            guard let id = id else { return "/products/" }
+        case .product(let id):
             return "/products/\(id)"
         case .getProducts:
             return "/products/"
         case .categories:
             return "/products/categories"
-        case .productsInCategory(category: let category):
-            guard let category = category else { return "/products/categories" }
+        case .productsInCategory(let category):
             return "/products/category/\(category)"
         }
     }
