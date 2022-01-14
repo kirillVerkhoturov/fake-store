@@ -46,7 +46,6 @@ class LoginTableView: UITableView {
         let footer = LoginTableFooterView()
         footer.translatesAutoresizingMaskIntoConstraints = false
         tableFooterView = footer
-
     }
 
     @objc private func signInButtonDidTap() {
