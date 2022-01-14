@@ -29,6 +29,12 @@
 		4F978822278D7EF000D89DD4 /* AuthAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978821278D7EEF00D89DD4 /* AuthAPIClient.swift */; };
 		4F978824278D807900D89DD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978823278D807900D89DD4 /* AuthService.swift */; };
 		4F978827278DC86E00D89DD4 /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978826278DC86E00D89DD4 /* SessionRepository.swift */; };
+		4F978829278EE3A700D89DD4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978828278EE3A700D89DD4 /* HomeView.swift */; };
+		4F97882D278EE60600D89DD4 /* CustomPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97882C278EE60600D89DD4 /* CustomPagingViewController.swift */; };
+		4F978830278EEB9B00D89DD4 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97882F278EEB9B00D89DD4 /* PageContentViewController.swift */; };
+		4F978832278EEBBE00D89DD4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978831278EEBBE00D89DD4 /* PageContentView.swift */; };
+		4F9788352790555000D89DD4 /* UIPageViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9788342790555000D89DD4 /* UIPageViewController+Ext.swift */; };
+		4F9788382791618500D89DD4 /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9788372791618500D89DD4 /* PageContent.swift */; };
 		4FA20A542774988A003E3703 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA20A532774988A003E3703 /* AppImages.swift */; };
 		4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D33277B155F00AA0810 /* DIContainer.swift */; };
 		4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D38277C514C00AA0810 /* WishlistService.swift */; };
@@ -102,6 +108,12 @@
 		4F978821278D7EEF00D89DD4 /* AuthAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIClient.swift; sourceTree = "<group>"; };
 		4F978823278D807900D89DD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4F978826278DC86E00D89DD4 /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
+		4F978828278EE3A700D89DD4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4F97882C278EE60600D89DD4 /* CustomPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagingViewController.swift; sourceTree = "<group>"; };
+		4F97882F278EEB9B00D89DD4 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		4F978831278EEBBE00D89DD4 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		4F9788342790555000D89DD4 /* UIPageViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Ext.swift"; sourceTree = "<group>"; };
+		4F9788372791618500D89DD4 /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
 		4FA20A532774988A003E3703 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		4FB56D33277B155F00AA0810 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		4FB56D38277C514C00AA0810 /* WishlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistService.swift; sourceTree = "<group>"; };
@@ -205,6 +217,7 @@
 		4F2A788C2779F612004FC159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F9788362791617700D89DD4 /* AppEntities */,
 				4F978825278DC86000D89DD4 /* Store */,
 				4F2A788D2779F620004FC159 /* Network */,
 			);
@@ -315,6 +328,7 @@
 			children = (
 				4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */,
 				4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */,
+				4F9788342790555000D89DD4 /* UIPageViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,6 +339,32 @@
 				4F978826278DC86E00D89DD4 /* SessionRepository.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		4F97882E278EEB7F00D89DD4 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4F978831278EEBBE00D89DD4 /* PageContentView.swift */,
+				4F97882F278EEB9B00D89DD4 /* PageContentViewController.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		4F97883327904B9F00D89DD4 /* UIPageController */ = {
+			isa = PBXGroup;
+			children = (
+				4F97882C278EE60600D89DD4 /* CustomPagingViewController.swift */,
+				4F97882E278EEB7F00D89DD4 /* ContentView */,
+			);
+			path = UIPageController;
+			sourceTree = "<group>";
+		};
+		4F9788362791617700D89DD4 /* AppEntities */ = {
+			isa = PBXGroup;
+			children = (
+				4F9788372791618500D89DD4 /* PageContent.swift */,
+			);
+			path = AppEntities;
 			sourceTree = "<group>";
 		};
 		4FB56D44277C59C300AA0810 /* ViewModel */ = {
@@ -391,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF90EBB2774D57D00025DB5 /* HomeViewController.swift */,
+				4F978828278EE3A700D89DD4 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,6 +604,7 @@
 		E8621DCB2770085A004C3080 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4F97883327904B9F00D89DD4 /* UIPageController */,
 				4FF90EBF2774D69000025DB5 /* NavigationController */,
 				4F74BD52277CA40B00F4BB35 /* TextField */,
 			);
@@ -827,6 +869,7 @@
 				4F74BD4D277C958800F4BB35 /* LoginView.swift in Sources */,
 				4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */,
 				4F97881C278C59F300D89DD4 /* UITableViewCell+Ext.swift in Sources */,
+				4F9788382791618500D89DD4 /* PageContent.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
 				4F74BD5D277DD21800F4BB35 /* LoginTableView.swift in Sources */,
 				4FB56D39277C514C00AA0810 /* WishlistService.swift in Sources */,
@@ -836,9 +879,11 @@
 				4F2A7896277A2011004FC159 /* HomeAPIClient.swift in Sources */,
 				4FF90ECA2775CC7F00025DB5 /* CartViewModel.swift in Sources */,
 				4FF90EC12774D6AC00025DB5 /* StoreNavigationController.swift in Sources */,
+				4F978832278EEBBE00D89DD4 /* PageContentView.swift in Sources */,
 				4FF90EBE2774D58700025DB5 /* ProfileViewController.swift in Sources */,
 				E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */,
 				4FA20A542774988A003E3703 /* AppImages.swift in Sources */,
+				4F978829278EE3A700D89DD4 /* HomeView.swift in Sources */,
 				4F74BD5B277DBE0B00F4BB35 /* LoginTableHeaderView.swift in Sources */,
 				4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */,
 				4F978827278DC86E00D89DD4 /* SessionRepository.swift in Sources */,
@@ -847,6 +892,7 @@
 				4F74BD57277CD25D00F4BB35 /* LoginTableViewCell.swift in Sources */,
 				4F2A7898277A2220004FC159 /* HomeService.swift in Sources */,
 				4FF90EC42775CC2A00025DB5 /* HomeViewModel.swift in Sources */,
+				4F978830278EEB9B00D89DD4 /* PageContentViewController.swift in Sources */,
 				4FF90ECD2775CC9B00025DB5 /* ProfileViewModel.swift in Sources */,
 				4FB56D34277B155F00AA0810 /* DIContainer.swift in Sources */,
 				4F74BD4F277C959300F4BB35 /* LoginViewController.swift in Sources */,
@@ -855,7 +901,9 @@
 				4FF90EC62775CC5E00025DB5 /* WishlistViewModel.swift in Sources */,
 				4FF90EBC2774D57D00025DB5 /* HomeViewController.swift in Sources */,
 				4FF90ED02775D5E700025DB5 /* ModuleFactory.swift in Sources */,
+				4F9788352790555000D89DD4 /* UIPageViewController+Ext.swift in Sources */,
 				4F74BD5F277DD48F00F4BB35 /* LoginTableFooterView.swift in Sources */,
+				4F97882D278EE60600D89DD4 /* CustomPagingViewController.swift in Sources */,
 				4F338AD1278AC0CA000D2949 /* LoginViewModel.swift in Sources */,
 				E8621D9B277005A2004C3080 /* SceneDelegate.swift in Sources */,
 				4FB56D3B277C517900AA0810 /* WishlistAPIClient.swift in Sources */,
