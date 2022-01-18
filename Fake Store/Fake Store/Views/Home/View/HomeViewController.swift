@@ -13,6 +13,13 @@ class HomeViewController: UIViewController {
 
     let homeViewModel: HomeViewModel
 
+    // MARK: - Private Properties
+
+    private lazy var homeView = HomeView()
+    private let pageContent: [PageContent] = [PageContent(title: "Payday Deals!", body: "Get up to 80% discount only on 25-30 May.", buttonTitle: "Get Now"),
+                                              PageContent(title: "Sales!!", body: "Black friday - 80% discount only on 20 May.", buttonTitle: "Want it"),
+                                              PageContent(title: "Final", body: "Black friday - 80% discount only on 20 May.", buttonTitle: "Want it")]
+
     // MARK: - Initializers
 
     init(viewModel: HomeViewModel) {
@@ -26,12 +33,24 @@ class HomeViewController: UIViewController {
 
     // MARK: - Lifecycle
 
+    override func loadView() {
+         view = homeView
+     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.systemPurple
+        homeView.pagingView.setContent(with: pageContent)
+        setupBindings()
+//        homeViewModel.requestCategories()
+//        homeViewModel.requestProducts()
+    }
 
-        homeViewModel.requestCategories()
-        homeViewModel.requestProducts()
+    // MARK: - Private Properties
+
+    private func setupBindings() {
+        homeView.pagingView.onActionButtonDidTap = { id in
+            print(id)
+        }
     }
 
 }
