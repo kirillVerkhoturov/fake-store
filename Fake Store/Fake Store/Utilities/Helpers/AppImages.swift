@@ -36,4 +36,8 @@ final class AppImages {
         static let leftArrow = UIImage(named: "left.Arrow")
     }
 
+    enum InAppImages {
+        static let bottles = UIImage(named: "bottles")
+    }
+
 }

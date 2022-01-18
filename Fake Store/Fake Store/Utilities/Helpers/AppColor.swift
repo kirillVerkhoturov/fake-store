@@ -26,6 +26,9 @@ enum AppColor {
     static let primaryBlack30 = UIColor(named: "primaryBlack")?.withAlphaComponent(0.3) ?? missingColor
     static let primaryBlack20 = UIColor(named: "primaryBlack")?.withAlphaComponent(0.2) ?? missingColor
     static let primaryBlack10 = UIColor(named: "primaryBlack")?.withAlphaComponent(0.1) ?? missingColor
+    static let pageContentOrange = UIColor(named: "pageOrange") ?? missingColor
+    static let pageContentBlue = UIColor(named: "pageBlue") ?? missingColor
+
 
     static let loginWhite = UIColor(named: "loginWhite") ?? missingColor
 
