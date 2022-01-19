@@ -52,16 +52,28 @@ class LoginViewController: UIViewController {
     // MARK: - Private Methods
 
     private func setupBindings() {
-        
         loginView.loginTableView.onLoginButtonDidTap = { [weak self] in
-            debugPrint("didTap in callback")
             self?.loginViewModel.loginButtonDidTap()
         }
-        loginView.loginTableView.onUsernameChange = { [weak self] username in
-            self?.loginViewModel.username = username
+        loginView.loginTableView.onUsernameChange = { [unowned self] username in
+            self.loginViewModel.username = username
         }
-        loginView.loginTableView.onPasswordChange = { [weak self] password in
-            self?.loginViewModel.password = password
+        loginView.loginTableView.onPasswordChange = { [unowned self] password in
+            self.loginViewModel.password = password
+        }
+
+        loginViewModel.onShowAlert = { [weak self] in
+            self?.showErrorAlert()
+        }
+    }
+
+    private func showErrorAlert() {
+        let data = UIAlertControllerInputData (title: "Unable to perform action",
+                                               message: "Sorry, action you trying to perform is not possible at the moment. Please try again later.",
+                                               buttons: [.init(title: "OK")])
+        let alert = UIAlertController(inputData: data)
+        DispatchQueue.main.async { [weak self] in
+            self?.present(alert, animated: true)
         }
     }
 

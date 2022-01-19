@@ -28,7 +28,7 @@ final class DIContainer {
 
     // MARK: - Private Properties
 
-    private let maxResponseTime: TimeInterval = 30
+    private let maxResponseTime: TimeInterval = 20
 
     // MARK: - Initializers
 
