@@ -34,8 +34,8 @@ final class AuthService: AuthServiceProtocol {
             case .success(_):
                 self?.sessionRepository.userId = self?.userId
                 completion(result)
-            case let .failure(error):
-                print(error)
+            case .failure(_):
+                completion(result)
             }
         }
     }

@@ -9,12 +9,6 @@ import Foundation
 
 final class LoginViewModel {
 
-    // MARK: - Private Properties
-
-    private let authService: AuthServiceProtocol?
-    private var userData = ["username": "",
-                            "password": ""]
-
     // MARK: - Public Properties
 
     var isLogin: ((Bool) -> Void)?
@@ -28,6 +22,13 @@ final class LoginViewModel {
             userData["password"] = password
         }
     }
+    var onShowAlert: (() -> Void)?
+
+    // MARK: - Private Properties
+
+    private let authService: AuthServiceProtocol?
+    private var userData = ["username": "",
+                            "password": ""]
 
     // MARK: - Initializers
 
@@ -35,25 +36,31 @@ final class LoginViewModel {
         self.authService = service
     }
 
-    // MARK: - Public Properties
+    // MARK: - Public Methods
 
     func loginButtonDidTap() {
         if !userData.isEmpty {
-            authService?.login(with: userData, completion: { [weak self] result in
-                switch result {
-                case .success(_):
-                    DispatchQueue.main.async {
-                        self?.isLogin?(true)
-                    }
-                case let .failure(error):
-                    print("‼️\(error)")
-                }
-            })
+            loginRequest()
         }
     }
 
     func checkLoginStatus() -> Bool {
         false
+    }
+
+    // MARK: - Private Methods
+
+    private func loginRequest() {
+        authService?.login(with: userData, completion: { [weak self] result in
+            switch result {
+            case .success(_):
+                DispatchQueue.main.async {
+                    self?.isLogin?(true)
+                }
+            case .failure(_):
+                self?.onShowAlert?()
+            }
+        })
     }
     
 }

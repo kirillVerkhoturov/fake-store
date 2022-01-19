@@ -37,6 +37,8 @@
 		4FB56D3F277C54DF00AA0810 /* ProfileAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */; };
 		4FB56D41277C550B00AA0810 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D40277C550B00AA0810 /* CartService.swift */; };
 		4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D42277C552E00AA0810 /* CartAPIClient.swift */; };
+		4FF3E548279828E8000D7B3F /* UIAlertControllerInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E547279828E8000D7B3F /* UIAlertControllerInputData.swift */; };
+		4FF3E54A2798296D000D7B3F /* UIAlertViewController+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E5492798296D000D7B3F /* UIAlertViewController+Init.swift */; };
 		4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */; };
 		4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */; };
 		4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB92774D56200025DB5 /* CartViewController.swift */; };
@@ -110,6 +112,8 @@
 		4FB56D3E277C54DF00AA0810 /* ProfileAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIClient.swift; sourceTree = "<group>"; };
 		4FB56D40277C550B00AA0810 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
 		4FB56D42277C552E00AA0810 /* CartAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAPIClient.swift; sourceTree = "<group>"; };
+		4FF3E547279828E8000D7B3F /* UIAlertControllerInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerInputData.swift; sourceTree = "<group>"; };
+		4FF3E5492798296D000D7B3F /* UIAlertViewController+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Init.swift"; sourceTree = "<group>"; };
 		4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabBarController.swift; sourceTree = "<group>"; };
 		4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		4FF90EB92774D56200025DB5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -333,6 +337,15 @@
 				4FF90ECC2775CC9B00025DB5 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FF3E546279828CC000D7B3F /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4FF3E547279828E8000D7B3F /* UIAlertControllerInputData.swift */,
+				4FF3E5492798296D000D7B3F /* UIAlertViewController+Init.swift */,
+			);
+			path = UIAlertController;
 			sourceTree = "<group>";
 		};
 		4FF90EA82774CCBC00025DB5 /* TabBar */ = {
@@ -563,6 +576,7 @@
 		E8621DCB2770085A004C3080 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4FF3E546279828CC000D7B3F /* UIAlertController */,
 				4FF90EBF2774D69000025DB5 /* NavigationController */,
 				4F74BD52277CA40B00F4BB35 /* TextField */,
 			);
@@ -825,6 +839,7 @@
 			files = (
 				4FF90ED22776072700025DB5 /* ViewModelFactory.swift in Sources */,
 				4F74BD4D277C958800F4BB35 /* LoginView.swift in Sources */,
+				4FF3E54A2798296D000D7B3F /* UIAlertViewController+Init.swift in Sources */,
 				4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */,
 				4F97881C278C59F300D89DD4 /* UITableViewCell+Ext.swift in Sources */,
 				4F6CBD3D2774898300C6A5A3 /* AppColor.swift in Sources */,
@@ -861,6 +876,7 @@
 				4FB56D3B277C517900AA0810 /* WishlistAPIClient.swift in Sources */,
 				4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */,
 				4F978824278D807900D89DD4 /* AuthService.swift in Sources */,
+				4FF3E548279828E8000D7B3F /* UIAlertControllerInputData.swift in Sources */,
 				4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */,
 				4F2A78922779F68C004FC159 /* RequestBuilder.swift in Sources */,
 				4F2A7894277A15D8004FC159 /* APIClient.swift in Sources */,
