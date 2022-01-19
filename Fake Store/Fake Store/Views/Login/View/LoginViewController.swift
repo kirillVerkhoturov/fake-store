@@ -71,10 +71,7 @@ class LoginViewController: UIViewController {
         let data = UIAlertControllerInputData (title: "Unable to perform action",
                                                message: "Sorry, action you trying to perform is not possible at the moment. Please try again later.",
                                                buttons: [.init(title: "OK")])
-        let alert = UIAlertController(inputData: data)
-        DispatchQueue.main.async { [weak self] in
-            self?.present(alert, animated: true)
-        }
+        presentAlert(with: data)
     }
 
 }

@@ -39,6 +39,7 @@
 		4FB56D43277C552E00AA0810 /* CartAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB56D42277C552E00AA0810 /* CartAPIClient.swift */; };
 		4FF3E548279828E8000D7B3F /* UIAlertControllerInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E547279828E8000D7B3F /* UIAlertControllerInputData.swift */; };
 		4FF3E54A2798296D000D7B3F /* UIAlertViewController+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E5492798296D000D7B3F /* UIAlertViewController+Init.swift */; };
+		4FF3E54C27983930000D7B3F /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E54B27983930000D7B3F /* UIViewController+Ext.swift */; };
 		4FF90EAA2774CCE200025DB5 /* StoreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */; };
 		4FF90EB82774D55A00025DB5 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */; };
 		4FF90EBA2774D56200025DB5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF90EB92774D56200025DB5 /* CartViewController.swift */; };
@@ -114,6 +115,7 @@
 		4FB56D42277C552E00AA0810 /* CartAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartAPIClient.swift; sourceTree = "<group>"; };
 		4FF3E547279828E8000D7B3F /* UIAlertControllerInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerInputData.swift; sourceTree = "<group>"; };
 		4FF3E5492798296D000D7B3F /* UIAlertViewController+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Init.swift"; sourceTree = "<group>"; };
+		4FF3E54B27983930000D7B3F /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4FF90EA92774CCE200025DB5 /* StoreTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabBarController.swift; sourceTree = "<group>"; };
 		4FF90EB72774D55A00025DB5 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		4FF90EB92774D56200025DB5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			children = (
 				4F97881B278C59F300D89DD4 /* UITableViewCell+Ext.swift */,
 				4F97881D278C5A1300D89DD4 /* UITableView+Ext.swift */,
+				4FF3E54B27983930000D7B3F /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -854,6 +857,7 @@
 				4FF90EBE2774D58700025DB5 /* ProfileViewController.swift in Sources */,
 				E8621D99277005A2004C3080 /* AppDelegate.swift in Sources */,
 				4FA20A542774988A003E3703 /* AppImages.swift in Sources */,
+				4FF3E54C27983930000D7B3F /* UIViewController+Ext.swift in Sources */,
 				4F74BD5B277DBE0B00F4BB35 /* LoginTableHeaderView.swift in Sources */,
 				4FB56D3D277C54AD00AA0810 /* ProfileService.swift in Sources */,
 				4F978827278DC86E00D89DD4 /* SessionRepository.swift in Sources */,
